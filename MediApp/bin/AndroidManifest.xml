@@ -3,41 +3,41 @@
     package="com.example.mediapp"
     android:versionCode="1"
     android:versionName="1.0" >
- 
+
     <uses-sdk android:minSdkVersion="8" />
- 
+
     <application
         android:configChanges="keyboardHidden|orientation"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
- 
         <activity
-            android:name=".MainScreen"
+            android:name="com.example.mediapp.MainScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
- 
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
- <!-- *********************************************** -->
+        <!-- *********************************************** -->
         <activity
-            android:name=".AllPatientsActivity"
+            android:name="com.example.mediapp.AllPatientsActivity"
             android:label="View Patients" >
         </activity>
- 
         <activity
-            android:name=".NewPatientActivity"
+            android:name="com.example.mediapp.NewPatientActivity"
             android:label="Add New Patient" >
         </activity>
- 
         <activity
-            android:name=".EditPatientActivity"
+            android:name="com.example.mediapp.EditPatientActivity"
             android:label="Edit Patient" >
         </activity>
-       
+        <activity
+            android:name="com.example.mediapp.NewPatientMR"
+            android:label="@string/title_activity_new_patient_mr" >
+        </activity>
     </application>
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
- 
+
 </manifest>
