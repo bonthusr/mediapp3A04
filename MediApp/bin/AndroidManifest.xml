@@ -3,25 +3,41 @@
     package="com.example.mediapp"
     android:versionCode="1"
     android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="18"
-        android:targetSdkVersion="18" />
-
+ 
+    <uses-sdk android:minSdkVersion="8" />
+ 
     <application
-        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name" >
+ 
         <activity
-            android:name="com.example.mediapp.MainActivity"
+            android:name=".MainScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+ 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+ <!-- *********************************************** -->
+        <activity
+            android:name=".AllPatientsActivity"
+            android:label="View Patients" >
+        </activity>
+ 
+        <activity
+            android:name=".NewPatientActivity"
+            android:label="Add New Patient" >
+        </activity>
+ 
+        <activity
+            android:name=".EditPatientActivity"
+            android:label="Edit Patient" >
+        </activity>
+       
     </application>
-
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+ 
 </manifest>

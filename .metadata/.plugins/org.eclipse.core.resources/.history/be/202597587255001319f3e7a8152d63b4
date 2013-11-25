@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Button android:id="@+id/btnViewPatients"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Patients"
+        android:layout_marginTop="25dip"/>
+ 
+    <Button android:id="@+id/btnAddPatient"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Patient"
+        android:layout_marginTop="25dip"/>
+    
+</LinearLayout>
